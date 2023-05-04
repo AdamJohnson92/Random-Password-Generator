@@ -40,13 +40,13 @@ if (
   {window.alert("Password must be between 8 and 128 characters long.");
   return};
 
-  var capitalConfirm = window.confirm("Do you want to include capital letters?");
+  var capitalConfirm = window.confirm("Do you want to include capital letters? OK for Yes, Cancel for No.");
     if (capitalConfirm) {pullOptions=pullOptions.concat(capitalLetters)};
-  var lowerConfirm = window.confirm("Do you want to include lowercase letters?");
+  var lowerConfirm = window.confirm("Do you want to include lowercase letters? OK for Yes, Cancel for No.");
     if (lowerConfirm) {pullOptions=pullOptions.concat(lowerLetters)};
-  var numbersConfirm = window.confirm("Do you want to include numbers?");
+  var numbersConfirm = window.confirm("Do you want to include numbers? OK for Yes, Cancel for No.");
     if (numbersConfirm) {pullOptions=pullOptions.concat(numbers)};
-  var specialConfirm = window.confirm("Do you want to include special characters?");
+  var specialConfirm = window.confirm("Do you want to include special characters? OK for Yes, Cancel for No.");
     if (specialConfirm) {pullOptions=pullOptions.concat(specialCharacters)};
 
   return pullOptions;
